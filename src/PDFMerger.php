@@ -32,6 +32,12 @@
  *  - essentially, it cannot import dynamic content such as form fields, links
  * or page annotations (anything not a part of the page content stream).
  */
+
+namespace dvanderh;
+
+use dvanderh\pdf\TCPDI;
+use dvanderh\pdf\TCPDF;
+
 class PDFMerger
 {
 	private $_files;	//['form.pdf']  ["1,2,4, 5-19"]
@@ -185,12 +191,6 @@ class PDFMerger
         $this->_keywords = $keywords;
         return $this;
     }
-
-	public function __construct()
-	{
-		require_once('tcpdf/tcpdf.php');
-		require_once('tcpdf/tcpdi.php');
-	}
 
     public function __destruct()
     {

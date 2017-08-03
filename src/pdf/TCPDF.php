@@ -107,19 +107,13 @@
  * @version 6.2.8
  */
 
+namespace dvanderh\pdf;
+
 // TCPDF configuration
 require_once(dirname(__FILE__).'/tcpdf_autoconfig.php');
-// TCPDF static font methods and data
-require_once(dirname(__FILE__).'/include/tcpdf_font_data.php');
-// TCPDF static font methods and data
-require_once(dirname(__FILE__).'/include/tcpdf_fonts.php');
-// TCPDF static color methods and data
-require_once(dirname(__FILE__).'/include/tcpdf_colors.php');
-// TCPDF static image methods and data
-require_once(dirname(__FILE__).'/include/tcpdf_images.php');
-// TCPDF static methods and data
-require_once(dirname(__FILE__).'/include/tcpdf_static.php');
 
+use dvanderh\pdf\includes\TCPDF_STATIC;
+use dvanderh\pdf\includes\TCPDF_FONTS;
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 /**

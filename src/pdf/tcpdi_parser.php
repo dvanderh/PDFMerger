@@ -39,6 +39,11 @@
 //
 //============================================================+
 
+namespace dvanderh\pdf;
+
+use dvanderh\pdf\includes\TCPDF_FILTERS;
+use Exception;
+
 /**
  * @file
  * This is a PHP class for parsing PDF documents.<br>
@@ -51,9 +56,6 @@
  * Exception for handling issues on pdf parsing.
  */
 class TCPdiParserException extends Exception {};
-
-// include class for decoding filters
-require_once(dirname(__FILE__).'/include/tcpdf_filters.php');
 
 if (!defined ('PDF_TYPE_NULL'))
     define ('PDF_TYPE_NULL', 0);

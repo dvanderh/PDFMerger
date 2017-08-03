@@ -19,12 +19,8 @@
 //
 
 // Dummy shim to allow unmodified use of fpdf_tpl
-class FPDF extends TCPDF {}
 
-require_once('fpdf_tpl.php');
-
-require_once('tcpdi_parser.php');
-
+namespace dvanderh\pdf;
 
 class TCPDI extends FPDF_TPL {
     /**

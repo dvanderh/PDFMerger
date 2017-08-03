@@ -33,6 +33,8 @@
 //
 //============================================================+
 
+namespace dvanderh\pdf;
+
 /**
  * @file
  * !!! THIS CLASS IS UNDER DEVELOPMENT !!!

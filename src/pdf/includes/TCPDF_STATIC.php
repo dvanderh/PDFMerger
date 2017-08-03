@@ -33,6 +33,8 @@
 //
 //============================================================+
 
+namespace dvanderh\pdf\includes;
+
 /**
  * @file
  * This is a PHP class that contains static methods for the TCPDF class.<br>

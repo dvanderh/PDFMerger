@@ -31,6 +31,8 @@
 //
 //============================================================+
 
+namespace dvanderh\pdf\includes;
+
 /**
  * @file
  * PHP color class for TCPDF

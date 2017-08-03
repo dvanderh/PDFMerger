@@ -31,6 +31,8 @@
 //
 //============================================================+
 
+namespace dvanderh\pdf\includes;
+
 /**
  * @file
  * Unicode data and encoding maps for TCPDF.

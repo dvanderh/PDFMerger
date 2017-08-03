@@ -32,6 +32,8 @@
 //
 //============================================================+
 
+namespace dvanderh\pdf;
+
 /**
  * @file
  * PHP class to creates array representations for 2D barcodes to be used with TCPDF.

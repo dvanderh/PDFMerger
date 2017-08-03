@@ -31,6 +31,8 @@
 //
 //============================================================+
 
+namespace dvanderh\pdf\includes;
+
 /**
  * @file
  * Unicode data and font methods for TCPDF library.
@@ -1998,7 +2000,7 @@ class TCPDF_FONTS {
 		if ($isunicode) {
 			// requires PCRE unicode support turned on
 			$chars = TCPDF_STATIC::pregSplit('//','u', $str, -1, PREG_SPLIT_NO_EMPTY);
-			$carr = array_map(array('TCPDF_FONTS', 'uniord'), $chars);
+			$carr = array_map(array('dvanderh\pdf\includes\TCPDF_FONTS', 'uniord'), $chars);
 		} else {
 			$chars = str_split($str);
 			$carr = array_map('ord', $chars);
