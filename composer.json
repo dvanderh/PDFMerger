@@ -12,7 +12,7 @@
     ],
     "autoload": {
 	  	"psr-4": {
-	  		"dvanderh\\": "vendor/dvanderh/PDFMerger/src/"
+	  		"dvanderh\\": "src/"
 	  	}
     }
 }
