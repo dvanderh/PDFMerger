@@ -20,11 +20,11 @@ FPDF and FPDI libraries replaced by TCPDF with TCPDI extension and parser.
 
 To install the library add the following line to your composer.json:
 
-```"myokyawhtun/pdfmerger": "dev-master"```
+```"dvanderh/pdfmerger": "dev-master"```
 
 ### Example Usage
 ```php
-$pdf = new \PDFMerger();
+$pdf = new \dvanderh\PDFMerger();
 
 $pdf->addPDF('samplepdfs/one.pdf', '1, 3, 4');
 $pdf->addPDF('samplepdfs/two.pdf', '1-2');

@@ -1,10 +1,18 @@
 {
-    "name": "vaza18/pdfmerger",
-    "description": "PDFMerger for PHP (PHP5 Compatible) by Jarrod Nettles",
-    "require":{
-    	"php": ">=5.2.0"
+    "name": "dvanderh/pdfmerger",
+    "description": "PDF File Merger for PHP5",
+    "require": {
+        "php": ">=5.2.0"
     },
+    "authors": [
+        {
+            "name": "Derk van der Heide",
+            "email": "derkvanderheide@hotmail.com"
+        }
+    ],
     "autoload": {
-      "files": ["PDFMerger.php"]
+	  	"psr-4": {
+	  		"dvanderh\\": "vendor/dvanderh/PDFMerger/src/"
+	  	}
     }
 }
